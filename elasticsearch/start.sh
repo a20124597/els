@@ -1,0 +1,1 @@
+docker run -d --rm --name elasticsearch5.6.11 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -v $PWD/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v $PWD/data:/usr/share/elasticsearch/data elasticsearch:5.6.11
